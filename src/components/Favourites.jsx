@@ -14,7 +14,7 @@ function Favourites(props) {
 
     return (
         <div className="Favourites">
-            <h3>Favourites</h3>
+            {saved ? <h3>Favourite pictures</h3> : <h3>Choosen picture</h3>}
             {savedPics.map(p => <MediaCard
                 key={p._id}
                 title={p.title}
